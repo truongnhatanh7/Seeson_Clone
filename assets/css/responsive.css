@@ -11,6 +11,7 @@
         display: block;
         font-size: 1.6rem;
         padding: 8px 16px;
+        z-index: 4;
     }
 
     .main-container {
@@ -33,7 +34,8 @@
         margin-right: auto;
         padding: 8px 8px;
         max-width: 25%;
-        
+        z-index: 4;
+        background-color: #fff;
     }
 
     .navbar-header .logo {
@@ -51,18 +53,20 @@
         align-items: center;
         /* display: none; */
         transition: all 0.3s ease 0s;
+        z-index: 1;
 
     }
 
     .navbar.idle {
         transition: all 0.3s ease 0s;
-        animation: disappear ease-in-out 0.5s;
-        display: none;
+        transform: translateY(-100%);
+        visibility: hidden;
+        animation: disappear ease-in-out 0.3s;
     }
 
     .navbar.active {
         display: flex;
-        animation: appear ease-in-out 0.5s;
+        animation: appear ease-in-out 0.3s;
     }
 
     @keyframes appear {
