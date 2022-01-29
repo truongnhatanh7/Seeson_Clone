@@ -49,6 +49,10 @@ body, html {
     position: fixed;
 }
 
+.navbar-header .menu-btn {
+    display: none;
+}
+
 .navbar-header img {
     width: 160px;
     margin-left: 30px;
@@ -63,6 +67,8 @@ body, html {
     display: flex;
     flex-direction: column;
 }
+
+
 
 .navbar-item {
     margin-top: 12px;
@@ -181,3 +187,4 @@ img:hover {
     color: #232323;
     line-height: 2rem;
 }
+
